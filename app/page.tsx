@@ -4,13 +4,13 @@ import { navItems } from "@/data";
 import dynamic from 'next/dynamic';
 
 import Hero from "@/components/Hero";
-import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
 import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 const Clients = dynamic(() => import("@/components/Clients"), { ssr: false });
 const RecentProjects = dynamic(() => import("@/components/RecentProjects"), { ssr: false });
+const Grid = dynamic(() => import("@/components/Grid"), { ssr: false });
 
 
 const Home = () => {
